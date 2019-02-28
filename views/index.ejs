@@ -1,17 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Home Page</title>
+    <!-- Meta Information -->
+    <title>Tweeter - Home Page</title>
 
+    <!-- External CSS -->
     <link rel="stylesheet" href="/vendor/normalize-4.1.1.css" type="text/css" />
-    <link rel="stylesheet" href="/vendor/border-box.css" type="text/css" />
-    <link rel="stylesheet" href="/styles/layout.css" type="text/css" />
+    
+    <!-- App CSS -->
+    <p>links for external css files go here</p>
 
-    <script type="text/javascript" src="/vendor/jquery-3.0.0.js"></script>
-    <script type="text/javascript" src="/scripts/app.js"></script>
+    <!-- External JS -->
+    <script type="text/javascript" src="/vendor/jquery-2.2.3.min.js"></script>
+    
+    <!-- App JS -->
+    <script type="text/javascript" src="/server.js"></script>
   </head>
 
   <body>
-    <h1>Hello World!</h1>
+
+    <!-- Top nav bar (fixed) -->
+    <nav id="nav-bar">
+      <img class="logo" src="/images/gitbyteslogo.png">
+      <span class="header">gitBytes</span>
+      <ul>
+        <li><button method="GET" type="submit" class="order-button">Order</button></li>
+      </ul>
+    </nav>
+
+    <!-- Page-specific (main) content here -->
+    <main>
+
+        <section>
+            <h2>gitBytes</h2>
+            <h3>Restaurant Name Here</h3>
+
+            <form method="POST" action="./gitbytes">
+
+              <input type="submit" value="Confirm Order">
+
+            </form>
+        </section>
+
+        <section>
+            <form>
+
+            </form>
+        </section>
+          
+
+        </main>
+
   </body>
+
 </html>
