@@ -1,53 +1,86 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+
+      
+  
+
     <!-- Meta Information -->
-    <title>Tweeter - Home Page</title>
+    <title>gitBytes</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- External CSS -->
     <link rel="stylesheet" href="/vendor/normalize-4.1.1.css" type="text/css" />
-    
-    <!-- App CSS -->
-    <p>links for external css files go here</p>
-
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  
     <!-- External JS -->
     <script type="text/javascript" src="/vendor/jquery-2.2.3.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
     
-    <!-- App JS -->
+    <!-- Server JS -->
     <script type="text/javascript" src="/server.js"></script>
+
   </head>
 
   <body>
-
-    <!-- Top nav bar (fixed) -->
-    <nav id="nav-bar">
-      <img class="logo" src="/images/gitbyteslogo.png">
-      <span class="header">gitBytes</span>
-      <ul>
-        <li><button method="GET" type="submit" class="order-button">Order</button></li>
-      </ul>
-    </nav>
 
     <!-- Page-specific (main) content here -->
     <main>
 
         <section>
-            <h2>gitBytes</h2>
-            <h3>Restaurant Name Here</h3>
-
-            <form method="POST" action="./gitbytes">
-
-              <input type="submit" value="Confirm Order">
-
-            </form>
-        </section>
-
-        <section>
-            <form>
-
-            </form>
-        </section>
           
+          <div class="jumbotron">
+            
+            <h1>gitBytes</h1>
+            <p>"cheesy one liner here"</p> 
+            
+          </div>
+
+        </section> 
+
+        <section id="carousel">
+
+         <!--random food image carousel here-->
+
+         <div class="container">
+            <h2>Carousel Example</h2>  
+            <div id="myCarousel" class="carousel slide" data-ride="carousel">
+              <!-- Indicators -->
+              <ol class="carousel-indicators">
+                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#myCarousel" data-slide-to="1"></li>
+                <li data-target="#myCarousel" data-slide-to="2"></li>
+              </ol>
+          
+              <!-- Wrapper for slides -->
+              <div class="carousel-inner">
+                <div class="item active">
+                  <img src="/images/donuts1.png" alt="donuts1" style="width:100%;">
+                </div>
+                
+                
+          
+                <div class="item">
+                  <img src="chicago.jpg" alt="Chicago" style="width:100%;">
+                </div>
+              
+                <div class="item">
+                  <img src="ny.jpg" alt="New york" style="width:100%;">
+                </div>
+              </div>
+
+        </section>
+        
+        <section>
+
+            <form method="GET" action="./gitbytes">
+
+            <button type="submit" class="btn btn-dark">ORDER NOW</button>
+
+            </form>
+
+        </section>
 
         </main>
 
