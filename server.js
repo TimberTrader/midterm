@@ -43,6 +43,29 @@ app.get("/", (req, res) => {
   res.render("index");
 });
 
+/*
+app.post("./gitbytes", (req, res) => {
+  res.redirect("./gitbytes")
+});
+
+app.get("./gitbytes", (req, res) => {
+  res.render("./gitbytes")
+});
+
+app.post("./gitbytes", (req, res) => {
+  ***to add menu items to cart***
+});
+
+app.put("./gitbytes", (req, res) => {
+  ***submitting an order and redirect a confirmation***
+});
+
+app.get("./confirmation", (req, res) => {
+  res.redirect("./confirmation")
+});
+
+*/
+
 app.listen(PORT, () => {
   console.log("Example app listening on port " + PORT);
 });
