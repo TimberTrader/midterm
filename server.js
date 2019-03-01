@@ -46,7 +46,17 @@ app.get("/", (req, res) => {
 
 //Button from home page to menu page
 app.get("/gitbytes", (req, res) => {
-  res.render("gitbytes")
+  knex('menus')
+  .select('*')
+  .from('menus')
+  .then(menus => {
+    const templateVars = {
+      menus
+    };
+    res.render("gitbytes", templateVars);
+  })
+  .catch((err) => { console.log( err); throw err })
+  // .finally(() => {knex.destroy();})
 });
 
 //GET for submitting an order and rendering a confirmation template***

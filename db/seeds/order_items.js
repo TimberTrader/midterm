@@ -12,9 +12,9 @@ exports.seed = function(knex, Promise) {
       return knex('menus').del()
     }).then(function () {
       return Promise.all([
-        knex('menus').insert({id: 10, item_name: 'Coffee, Large', description: 'great coffee, have it with cream or sugar', price: 195}),
-        knex('menus').insert({id: 11, item_name: 'Coffee, Medium', description: 'great coffee, have it with cream or sugar', price: 175}),
-        knex('menus').insert({id: 12, item_name: 'Coffee, Small', description: 'great coffee, have it with cream or sugar', price: 165}),
+        knex('menus').insert({id: 10, item_name: 'Coffee, Large', description: 'even more good coffee', price: 195}),
+        knex('menus').insert({id: 11, item_name: 'Coffee, Medium', description: 'more good coffee', price: 175}),
+        knex('menus').insert({id: 12, item_name: 'Coffee, Small', description: 'good coffee', price: 165}),
         knex('menus').insert({id: 13, item_name: 'Honey Cruller', description: 'a good doughnut', price: 95}),
         knex('menus').insert({id: 14, item_name: 'Chocolate Glaze', description: 'a good doughnut', price: 95}),
         knex('menus').insert({id: 15, item_name: 'Apple Fritter', description: 'a good doughnut', price: 95}),
