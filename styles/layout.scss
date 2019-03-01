@@ -1,7 +1,162 @@
-body {
-  background-color: #EEE;
-
-  h1 {
-    color: #244751;
-  }
+header .jumbotron {
+  background-color: #B5947D;
+  border: 1px solid black;
+  position: relative;
+  top: 0;
+  margin: 0px;
+  width: 100%;
+  height: 20%;
+  text-align: center;
+  font-family: 'Pacifico', sans-serif;
 }
+
+header .jumbotron .order-button {
+  float: right;
+  padding-right: 20px;
+  font-family: sans-serif;
+}
+
+.footer {
+  background-color: #B5947D;
+  border: 1px solid black;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 20%;
+}
+
+.footer .icons {
+  color: white;
+}
+
+body {
+  background-color: #C4E4FB;
+}
+
+body h1 {
+  color: #244751;
+}
+
+.container {
+  display: flex;
+}
+
+.container .menu-items {
+  background-color: #ccc;
+  border: 1px solid black;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.container .item-cart {
+  background-color: #ccc;
+  border: 1px solid black;
+  border-radius: 5px;
+  padding: 10px;
+  margin-left: 5px;
+}
+
+.container .confirmation-container {
+  border: 1px solid black;
+  padding: 10px;
+}
+
+.confirmation-container {
+  flex: 4;
+  text-align: center;
+  background-color: #ccc;
+  border-radius: 5px;
+}
+
+.menu-items {
+  flex: 3;
+}
+
+.menu-items .restaurant-name {
+  text-align: center;
+  font-family: 'Inconsolata', monospace;
+  font-size: 36px;
+}
+.menu-items .slogan {
+  text-align: center;
+  border-bottom: 1px solid black;
+  font-family: 'Inconsolata', monospace;
+  font-size: 20px;
+}
+
+.container h5 {
+  text-align: center;
+  font-size: 20px;
+  font-family: 'Inconsolata', monospace;
+}
+
+.container .menu-list {
+  text-align: left;
+  font-size: 16px;
+  font-family: 'Inconsolata', monospace;
+}
+
+.item-cart {
+  flex: 2;
+  text-align: left;
+  font-size: 16px;
+  font-family: 'Inconsolata', monospace;
+}
+
+.item-cart h2 {
+  text-align: center;
+  border-bottom: 1px solid black;
+  font-family: 'Inconsolata', monospace;
+  font-size: 36px;
+}
+
+.item-cart .confirm-button {
+  float: right;
+}
+
+.confirmation-container .confirmation {
+  text-align: center;
+  border-bottom: 1px solid black;
+  font-family: 'Inconsolata', monospace;
+}
+
+// // #myCarousel {
+// //   width: 100%;
+// //   overflow: hidden;
+// //   margin-left: 0px;
+// //   margin-right: 0px;
+// // }
+
+// #carousel {
+//   height: 100%;
+//   width: 100%;
+//   margin: 0px;
+//   padding: 0px;
+//   overflow: hidden;
+// }
+
+// .carousel-slide {
+//   height: 100%;
+//   width: 100%;
+//   margin: 0px;
+//   padding: 0px;
+// }
+
+
+// .carousel-inner {
+//   height: 100%;
+//   width: 100%;
+//   margin-left: 0px;
+//   margin-right: 0px;
+// }
+
+.carousel-inner>.item>a>img, .carousel-inner>.item>img, .img-responsive, .thumbnail a>img, .thumbnail>img {
+  // display: block;
+  // max-width: 100%;
+  // height: auto;
+  width: 100%;
+  overflow: hidden;
+}
+
+
+

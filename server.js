@@ -34,6 +34,7 @@ app.use("/styles", sass({
   outputStyle: 'expanded'
 }));
 app.use(express.static("public"));
+app.use('/images', express.static(__dirname + '/public/images'));
 
 // Mount all resource routes
 app.use("/api/users", usersRoutes(knex));
@@ -42,6 +43,34 @@ app.use("/api/users", usersRoutes(knex));
 app.get("/", (req, res) => {
   res.render("index");
 });
+
+//Button from home page to menu page
+app.get("/gitbytes", (req, res) => {
+  res.render("gitbytes")
+});
+
+//GET for submitting an order and rendering a confirmation template***
+app.get("/confirmation", (req, res) => {
+  res.render("confirmation")
+});
+
+/*
+
+//Post for adding menu items to cart
+app.post("/gitbytes", (req, res) => {
+});
+
+
+app.put("/gitbytes", (req, res) => {
+  res.render("confirmation")
+});
+
+
+app.post("/gitbytes", (req, res) => {
+  res.render("gitbytes")
+});
+
+*/
 
 app.listen(PORT, () => {
   console.log("Example app listening on port " + PORT);

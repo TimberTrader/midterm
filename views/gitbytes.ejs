@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Meta Information -->
+    <title>gitBytes</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="/vendor/normalize-4.1.1.css" type="text/css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Inconsolata:700" rel="stylesheet">
+
+
+    <!-- Server CSS -->
+    <link rel="stylesheet" href="/styles/layout.css" type="text/css" />
+  
+    <!-- External JS -->
+    <script type="text/javascript" src="/vendor/jquery-2.2.3.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    
+    <!-- Server JS -->
+
+  </head>
+
+  <header>
+
+          <div class="jumbotron">
+              <h1>gitBytes</h1>
+              <p><em>est.2019</em></p>  
+          </div>
+      
+  </header>
+
+  <body>
+    <main class="container">
+        <section class="menu-items">
+            <h2 class="restaurant-name">Coffee < br /> && Donuts </h2>
+            <h4 class="slogan"><em>"key-value pair your coffee with your favourite donuts"</em></h4>
+            <h5>MENU</h5>
+
+            <ul class="menu-list" style="list-style-type:none;">
+                <li>item 1</li>
+                <li>item 2</li>
+                <li>item 3</li>
+                <li>item 4</li>
+                <li>item 5</li>
+                <li>item 6</li>
+                <li>item 7</li>
+                <li>item 8</li>
+            </ul>
+
+            <form method="POST" action="/gitbytes"></form>
+
+        </section>
+           
+        <section class="item-cart">
+            <h2>ORDER LIST</h2>
+
+                <ul style="list-style-type:none;">
+                  <li>item 1</li>
+                  <li>item 2</li>
+                  <li>item 3</li>
+                </ul>
+
+                <form class="confirm-button" method="GET" action="/confirmation">
+
+                    <input type="text" placeholder="Name" name="name">
+                    <input type="text" placeholder="Phone Number" name="phone">
+
+                <button type="submit" class="btn btn-dark">CONFIRM</button>
+      
+                </form>
+
+          </section>
+      </main>
+  </body>
+
+  <footer class="footer">
+
+      <span class="icons">
+
+          <i class="fab fa-instagram"></i>
+          <i class="fab fa-twitter"></i>
+          <i class="fab fa-facebook"></i>
+          
+
+      </span>
+
+  </footer>
+
+</html>
