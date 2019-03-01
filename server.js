@@ -38,7 +38,7 @@ app.use(express.static("public"));
 // Mount all resource routes
 app.use("/api/users", usersRoutes(knex));
 
-// twilio sms handling route
+// twilio incoming sms route
 app.post('/sms', (req, res) => {
   const twiml = new MessagingResponse();
 
