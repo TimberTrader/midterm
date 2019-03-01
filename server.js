@@ -43,25 +43,30 @@ app.get("/", (req, res) => {
   res.render("index");
 });
 
+//Button from home page to menu page
+app.get("/gitbytes", (req, res) => {
+  res.render("gitbytes")
+});
+
+//GET for submitting an order and rendering a confirmation template***
+app.get("/confirmation", (req, res) => {
+  res.render("confirmation")
+});
+
 /*
-app.post("./gitbytes", (req, res) => {
-  res.redirect("./gitbytes")
+
+//Post for adding menu items to cart
+app.post("/gitbytes", (req, res) => {
 });
 
-app.get("./gitbytes", (req, res) => {
-  res.render("./gitbytes")
+
+app.put("/gitbytes", (req, res) => {
+  res.render("confirmation")
 });
 
-app.post("./gitbytes", (req, res) => {
-  ***to add menu items to cart***
-});
 
-app.put("./gitbytes", (req, res) => {
-  ***submitting an order and redirect a confirmation***
-});
-
-app.get("./confirmation", (req, res) => {
-  res.redirect("./confirmation")
+app.post("/gitbytes", (req, res) => {
+  res.render("gitbytes")
 });
 
 */

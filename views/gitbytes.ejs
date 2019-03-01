@@ -4,41 +4,78 @@
     <!-- Meta Information -->
     <title>gitBytes</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
 
     <!-- External CSS -->
     <link rel="stylesheet" href="/vendor/normalize-4.1.1.css" type="text/css" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
+
+    <!-- Server CSS -->
+    <link rel="stylesheet" href="/styles/layout.css" type="text/css" />
   
     <!-- External JS -->
     <script type="text/javascript" src="/vendor/jquery-2.2.3.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
     
     <!-- Server JS -->
-    <script type="text/javascript" src="/server.js"></script>
 
   </head>
 
+  <header>
+
+          <div class="jumbotron">
+              <h1>gitBytes</h1>
+              <p><em>est.2019</em></p>  
+          </div>
+      
+  </header>
+
   <body>
+    <main class="container">
+        <section class="menu-items">
+            <h3>Coffee < br /> && Donuts </h3>
+            <h4><em>"key-value pair your coffee with your favourite donuts"</em></h4>
+            <h5>MENU</h5>
 
-    <!-- Page-specific (main) content here -->
-    <main>
+            <ul>
+                <li><!---Append items selected from Menu--></li>
+                <li><!---Append items selected from Menu--></li>
+                <li><!---Append items selected from Menu--></li>
+                <li><!---Append items selected from Menu--></li>
+                <li><!---Append items selected from Menu--></li>
+                <li><!---Append items selected from Menu--></li>
+                <li><!---Append items selected from Menu--></li>
+                <li><!---Append items selected from Menu--></li>
+                <li><!---Append items selected from Menu--></li>
+            </ul>
 
-        <section>
-            <div class="jumbotron text-center">
-                <h1>gitBytes</h1>
-                <p>"cheesy one liner here"</p> 
-              </div>
+            <form method="POST" action="/gitbytes"></form>
 
-            <h3>Restaurant Name Here</h3>
+        </section>
+           
+        <section class="item-cart">
+            <h6>ORDER LIST</h6>
 
-            <form method="POST" action="./gitbytes">
+                <ul>
+                  <li><!---Append items selected from Menu--></li>
+                  <li><!---Append items selected from Menu--></li>
+                  <li><!---Append items selected from Menu--></li>
+                </ul>
 
-              <input type="submit" value="Order Now">
+                <form method="GET" action="/confirmation">
 
-            </form>
-        </section>          
+                <button type="submit" class="btn btn-dark">CONFIRM</button>
+      
+                </form>
 
-        </main>
-
+          </section>
+      </main>
   </body>
+
+  <footer class="footer">
+
+  </footer>
 
 </html>
