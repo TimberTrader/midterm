@@ -38,6 +38,16 @@ app.use(express.static("public"));
 // Mount all resource routes
 app.use("/api/users", usersRoutes(knex));
 
+// twilio sms handling route
+app.post('/sms', (req, res) => {
+  const twiml = new MessagingResponse();
+
+  twiml.message('Your order is 20 minutes away from GitBytes');
+
+  res.writeHead(200, {'Content-Type': 'text/xml'});
+  res.end(twiml.toString());
+});
+
 // Home page
 app.get("/", (req, res) => {
   res.render("index");
