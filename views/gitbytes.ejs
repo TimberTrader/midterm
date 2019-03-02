@@ -58,16 +58,15 @@
         <section class="item-cart">
             <h2>ORDER LIST</h2>
 
-                <ul style="list-style-type:none;">
-                  <li>item 1</li>
-                  <li>item 2</li>
-                  <li>item 3</li>
+                <ul id="cart" style="list-style-type:none;">
                 </ul>
 
-                <form class="confirm-button" method="GET" action="/confirmation">
+                <form class="confirm-button" method="POST" action="/confirmation">
 
                     <input type="text" placeholder="Name" name="name">
                     <input type="text" placeholder="Phone Number" name="phone">
+
+                    <input type="text" hidden name="smsStr" id="smsStr">
 
                 <button type="submit" class="btn btn-dark">CONFIRM</button>
       

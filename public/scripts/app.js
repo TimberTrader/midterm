@@ -1,42 +1,19 @@
-// $(() => {
-//   $.ajax({
-//     method: "GET",
-//     url: "/api/users"
-//   }).done((users) => {
-//     for(user of users) {
-//       $("<div>").text(user.name).appendTo($("body"));
-//     }
-//   });;
-// });
 
+function createOrderItem(string) {
+  return `<li>${string}</li>`
+};
+
+function appendToCart(string) {
+  $('#cart').append(createOrderItem(string))
+}
 
 $(() => {
-  // $(".order-button").on("submit", function(event) {
-  //   event.preventDefault()
-  //   console.log("We are here")
-  //     loadMenu();
-  //   });
-
-  // function loadMenu() {
-  //   $.ajax('/gitbytes', { method: 'GET'})
-  //       .then(function(theMenu){
-  //         console.log('sjdkhf', theMenu)
-  //           renderMenu(theMenu);
-  //   });
-  
-  //   function createMenuElement(menuItems) {
-  //   return (
-  //     <ul class="menu-list" style="list-style-type:none;">
-  //     <a> <li>`${menuItems.item_name} ${menuItems.description} ${menuItems.price}`</li> </a>
-  //     </ul>
-  //   )};
-  
-  //   function renderMenu(menu) {
-  //     menu.forEach(item => {
-  //         let menuHTML = createMenuElement(item);
-  //         $("menu-list").append(menuHTML)
-  //     });
-  //   };
-
-
+  $(".item").on("click", function (event) {
+    event.preventDefault();
+    let mItem = $(this).text();
+    appendToCart(mItem);
+    
+    let resSMS = $('#smsStr').val();
+    $('#smsStr').val(resSMS + mItem)
+  })
 });
