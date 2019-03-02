@@ -1,10 +1,19 @@
+
+function createOrderItem(string) {
+  return `<li>${string}</li>`
+};
+
+function appendToCart(string) {
+  $('#cart').append(createOrderItem(string))
+}
+
 $(() => {
-  $.ajax({
-    method: "GET",
-    url: "/api/users"
-  }).done((users) => {
-    for(user of users) {
-      $("<div>").text(user.name).appendTo($("body"));
-    }
-  });;
+  $(".item").on("click", function (event) {
+    event.preventDefault();
+    let mItem = $(this).text();
+    appendToCart(mItem);
+    
+    let resSMS = $('#smsStr').val();
+    $('#smsStr').val(resSMS +': '+mItem)
+  })
 });

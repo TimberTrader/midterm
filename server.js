@@ -34,6 +34,7 @@ app.use("/styles", sass({
   outputStyle: 'expanded'
 }));
 app.use(express.static("public"));
+app.use('/images', express.static(__dirname + '/public/images'));
 
 // Mount all resource routes
 app.use("/api/users", usersRoutes(knex));
@@ -52,6 +53,52 @@ app.post('/sms', (req, res) => {
 app.get("/", (req, res) => {
   res.render("index");
 });
+
+//Button from home page to menu page
+app.get("/gitbytes", (req, res) => {
+  knex('menus')
+  .select('*')
+  .from('menus')
+  .then(menus => {
+    const templateVars = {
+      menus
+    };
+    res.render("gitbytes", templateVars);
+  })
+  .catch((err) => { console.log( err); throw err })
+  // .finally(() => {knex.destroy();})
+});
+
+//GET for submitting an order and rendering a confirmation template***
+app.get("/confirmation", (req, res) => {
+  res.render("confirmation")
+});
+
+
+
+app.post("/gitbytes", (req, res) => {
+ //import {clientsms, restrauntsms} from './send_sms';
+//let clientsms = module.require(senclientsms)
+
+//clientsms(req.body.phone)
+  console.log(req.body.name)
+  console.log(req.body.phone)
+  console.log(req.body.smsStr)
+  let clientsms = require('./send_sms')
+  let restrauntsms = require('./send_restraunt_sms')
+  clientsms(req.body.phone)
+  restrauntsms(req.body.smsStr, req.body.name, req.body.phone)
+  
+  res.redirect("/confirmation")
+
+});
+/*
+
+app.post("/gitbytes", (req, res) => {
+  res.render("gitbytes")
+});
+
+*/
 
 app.listen(PORT, () => {
   console.log("Example app listening on port " + PORT);
