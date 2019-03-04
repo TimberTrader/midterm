@@ -72,8 +72,16 @@ app.get("/gitbytes", (req, res) => {
 //GET for submitting an order and rendering a confirmation template***
 app.get("/confirmation", (req, res) => {
   res.render("confirmation")
+ // res.redirect('/')
 });
-
+app.get("/orderstatus", (req, res) => {
+  res.render("orderstatus")
+ // res.redirect('/')
+});
+app.post("/confirmation", (req, res) => {
+  res.redirect("orderstatus")
+ // res.redirect('/')
+});
 
 
 app.post("/gitbytes", (req, res) => {
