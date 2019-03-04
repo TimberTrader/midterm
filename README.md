@@ -1,10 +1,10 @@
 # gitBytes - Midterm Project
 
-gitBytes is a simple food pick-up ordering application for our clients who prefer a quick and convenient alternative option to start their day. gitBytes number one ficticious coffee shop "Coffee < br /> && Donuts" allows our clients to simply launch the app via their mobile device and place their order whilst on the subway train or morning commute to the office. 
+gitBytes is a simple food pick-up ordering application for our clients who prefer a quick and convenient alternative option to start their day. We have teamed with Canada's number one ficticious coffee shop <em>"Coffee < br /> && Donuts"</em> to provide a simple, effective && efficient service to our clients. Simply launch gitBytes application via your mobile device || visit the gitBytes website && place your order. 
 
-Why is gitBytes better than our competitors? 
+Why is gitBytes > our competitors?
 
-This means no more waiting in line ups, the ability to select your order and upon submission of your order we will respond to you within seconds to confirm the coffee shop has received your order via SMS.  
+Our service === no line-ups, the ability to customize your order && immediate confirmation of your order upon submission via SMS.  
 
 ## Project Description 
 
@@ -43,14 +43,15 @@ You can use a modern telecomm API service such as Twilio to implement SMS commun
 * Pg: 6.0.2
 * Twilio: 3.28.1
 
-#devDependencies
+# DevDependencies
+
 * Nodemon 1.9.2
 
 ## Final Product
 
-![Homepage](midterm/public/images/home.jpg)
-![Order](midterm/public/images/order.jpg)
-![Confirmation](midterm/public/images/confirm.jpg)
+<img src="https://github.com/BraydenHalliday/midterm/blob/scaffolding-server/public/images/home.jpg" width =400>
+<img src="https://github.com/BraydenHalliday/midterm/blob/scaffolding-server/public/images/order.jpg" width =400>
+<img src="https://github.com/BraydenHalliday/midterm/blob/scaffolding-server/public/images/confirm.jpg" width =400>
 
 ## Collaborative Authoring (Alphabetic Order)
 
