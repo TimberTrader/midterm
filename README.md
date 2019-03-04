@@ -4,7 +4,7 @@ gitBytes is a simple food pick-up ordering application for our clients who prefe
 
 Why is gitBytes > our competitors?
 
-Our service === no line-ups, the ability to customize your order && immediate confirmation of your order upon submission via SMS.  
+Our service === no line-ups, the ability to customize your order && immediate confirmation upon submission via SMS.  
 
 ## Project Description 
 
