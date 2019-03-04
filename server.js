@@ -66,47 +66,30 @@ app.get("/gitbytes", (req, res) => {
     res.render("gitbytes", templateVars);
   })
   .catch((err) => { console.log( err); throw err })
-  // .finally(() => {knex.destroy();})
+
 });
 
 //GET for submitting an order and rendering a confirmation template***
 app.get("/confirmation", (req, res) => {
   res.render("confirmation")
- // res.redirect('/')
+
 });
 app.get("/orderstatus", (req, res) => {
   res.render("orderstatus")
- // res.redirect('/')
+
 });
 app.post("/confirmation", (req, res) => {
   res.redirect("orderstatus")
- // res.redirect('/')
+
 });
 
-
 app.post("/gitbytes", (req, res) => {
- //import {clientsms, restrauntsms} from './send_sms';
-//let clientsms = module.require(senclientsms)
-
-//clientsms(req.body.phone)
-  console.log(req.body.name)
-  console.log(req.body.phone)
-  console.log(req.body.smsStr)
   let clientsms = require('./send_sms')
   let restrauntsms = require('./send_restraunt_sms')
   clientsms(req.body.phone)
   restrauntsms(req.body.smsStr, req.body.name, req.body.phone)
-  
   res.redirect("/confirmation")
-
 });
-/*
-
-app.post("/gitbytes", (req, res) => {
-  res.render("gitbytes")
-});
-
-*/
 
 app.listen(PORT, () => {
   console.log("Example app listening on port " + PORT);

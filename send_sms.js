@@ -16,15 +16,3 @@ module.exports = function clientsms(phone) {
         })
     .then(message => console.log(message.sid));  
       }
-
-//orderitems has to come in as a string with quantities 
-/*
-function restrauntsms(orderitems, name) {
-    client.messages
-    .create({
-       body: `${orderitems}      ORDER FOR: ${name} `,
-       from: '+15873179972',
-       to: '+14039191295'
-        })
-    .then(message => console.log(message.sid));  
-}*/

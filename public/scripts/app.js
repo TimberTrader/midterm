@@ -1,8 +1,4 @@
 
-// function createOrderItem(string) {
-//   return `<li>${string}</li>`
-// };
-
 function createOrderItem(name, counter, price) {
 return `<li class='cart-item' data-name='${name}' data-count='${counter}'  data-price='${price}' >
           <div>${name}</div><div>x ${counter}</div><div>$${price}</div>
@@ -10,9 +6,6 @@ return `<li class='cart-item' data-name='${name}' data-count='${counter}'  data-
         </li>`
 }
 
-// function appendToCart(string) {
-//   $('#cart').append(createOrderItem(name, counter, price))
-// }
 
 function appendToCart(name, counter, price) {
     $('#cart').append(createOrderItem(name, counter, price))
