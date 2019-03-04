@@ -49,9 +49,9 @@ You can use a modern telecomm API service such as Twilio to implement SMS commun
 
 ## Final Product
 
-<img src="https://github.com/BraydenHalliday/midterm/blob/scaffolding-server/public/images/home.jpg" width =400>
-<img src="https://github.com/BraydenHalliday/midterm/blob/scaffolding-server/public/images/order.jpg" width =400>
-<img src="https://github.com/BraydenHalliday/midterm/blob/scaffolding-server/public/images/confirm.jpg" width =400>
+<img src="https://github.com/BraydenHalliday/midterm/blob/mvpV2/public/images/homepage.png" width =400>
+<img src="https://github.com/BraydenHalliday/midterm/blob/mvpV2/public/images/menu.png" width =400>
+<img src="https://github.com/BraydenHalliday/midterm/blob/mvpV2/public/images/status.png" width =400>
 
 ## Collaborative Authoring (Alphabetic Order)
 
