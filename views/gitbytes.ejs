@@ -44,9 +44,9 @@
             <ul class="menu-list" style="list-style-type:none;">
             <% menus.forEach(function(item) { %>
                 <li>
-                    <div>
+                    <div class="order_item">
                         <a class="item"><%= item.item_name %></a>
-                        <a class="price"><%= item.price %></a>
+                        <a class="price">$<%= Number(item.price/100).toFixed(2) %></a>
                     </div>
                 </li>
             <% }) %>
@@ -61,11 +61,12 @@
 
                 <ul id="cart" style="list-style-type:none;">
                 </ul>
+                <div class='total-label'>Your Total:<div id='total'>$0.00</div></div>
 
                 <form class="confirm-button" method="POST" action="/gitbytes">
 
                     <input type="text" placeholder="Name" name="name">
-                    <input type="text" placeholder="Phone Number" name="phone">
+                    <input type="text" value='+1'  placeholder="4033455678" name="phone">
 
                     <input type="text" hidden name="smsStr" id="smsStr">
 

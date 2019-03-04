@@ -119,6 +119,25 @@ body h1 {
   border-bottom: 1px solid black;
   font-family: 'Inconsolata', monospace;
 }
+// Tim's additions for shopping cart
+.cart-item {
+  display: flex;
+  justify-content: space-between
+  }
+
+#total {
+  float: right;
+  margin-left: 25px
+  }
+
+.total-label {
+  float: right
+}
+
+.price {
+  float: right;
+  padding-right: 120px
+  }
 
 // // #myCarousel {
 // //   width: 100%;
