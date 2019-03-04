@@ -1,6 +1,6 @@
 # gitBytes - Midterm Project
 
-gitBytes is a simple food pick-up ordering application for our clients who prefer a quick and convenient alternative option to start their day. We have teamed with Canada's number one ficticious coffee shop <em>"Coffee < br /> && Donuts"</em> to provide a simple, effective && efficient service to our clients. Simply launch gitBytes application via your mobile device || visit the gitBytes website && place your order. 
+gitBytes is a simple food pick-up ordering application for our clients who prefer a quick and convenient alternative option to start their day. We have teamed with Canada's number one ficticious coffee shop <em>"Coffee < br /> && Donuts"</em> to provide a simple, effective && efficient service to our clients. Simply launch the gitBytes application via your mobile device || visit the gitBytes website && place your order. 
 
 Why is gitBytes > our competitors?
 
