@@ -56,3 +56,4 @@ $(() => {
     cartItem.remove();
   })
 });
+
