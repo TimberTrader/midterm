@@ -1,4 +1,5 @@
 
+// renders a menu item for shopping cart
 function createOrderItem(name, counter, price) {
 return `<li class='cart-item' data-name='${name}' data-count='${counter}'  data-price='${price}' >
           <div>${name}</div><div>x ${counter}</div><div>$${price}</div>
@@ -6,7 +7,7 @@ return `<li class='cart-item' data-name='${name}' data-count='${counter}'  data-
         </li>`
 }
 
-
+//  adds rendered menu item to shopping cart
 function appendToCart(name, counter, price) {
     $('#cart').append(createOrderItem(name, counter, price))
 }
@@ -14,6 +15,7 @@ function appendToCart(name, counter, price) {
 
 $(() => {
   $(".item").on("click", function (event) {
+    // sets variables for shopping cart including formating price
     event.preventDefault();
       let mItem = $(this).text();
       let price = parseFloat(($(this).next().text().slice(1)));
@@ -22,7 +24,8 @@ $(() => {
       let $totalElement = $('#total');
       let tPrice = price + parseFloat($totalElement.text().slice(1));
       $totalElement.text('$' + tPrice.toFixed(2));
-      
+
+      // checks to see if item exists in cart, if so increase counter and adjust row price, else 
       if (cItem.length) {
         counter = Number(cItem.attr('data-count')) + 1;
         price = counter * price;
@@ -33,12 +36,12 @@ $(() => {
       } else {
         appendToCart(mItem, 1, price)
       }
-    
+    // sets string message for SMS (to twilio)
     let resSMS = $('#smsStr').val();
     $('#smsStr').val(resSMS +': ' + mItem + ' x ' + counter)
-    //console.log(resSMS)
+  
   })
-
+  // provide functionality to delete row item (entire) from shopping cart -- adjust to total price
   $("#cart").on("click", '.delete', function (event) {
     event.preventDefault();
     let cartItem = $(this).closest('.cart-item'); 
